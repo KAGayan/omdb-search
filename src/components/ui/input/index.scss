@@ -1,0 +1,19 @@
+@import 'styles/colors';
+
+.input {
+  font-size: x-small;
+  color: $gray-dark;
+  border: none;
+  border-bottom: solid 1px $gray-light;
+  margin: 0 10px;
+  padding: 8px;
+  max-width: 80px;
+
+  @media (max-width: 600px) {
+    background-color: $blue-light;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

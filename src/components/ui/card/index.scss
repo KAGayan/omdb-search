@@ -1,0 +1,13 @@
+.card {
+  width: 365px;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  @media (max-width: 762px) {
+    width: 100% !important;
+  }
+}
+
+.card-expand {
+  width: 100% !important;
+}

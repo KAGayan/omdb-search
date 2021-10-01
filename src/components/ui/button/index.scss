@@ -1,0 +1,15 @@
+@import 'styles/colors';
+
+.button-default {
+  font-size: x-small;
+  color: $white;
+  background-color: $blue;
+  border: none;
+  border-radius: 2px;
+  padding: 8px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $blue-dark;
+  }
+}
