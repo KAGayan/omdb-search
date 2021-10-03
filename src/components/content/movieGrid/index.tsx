@@ -27,10 +27,7 @@ const MovieGrid = ({ movies, totalResults }: Props) => {
         {movies.map((movie) => {
           return (
             <MovieCard
-              // Fix duplicate key issue when movies duplicated
-              key={`${movie.imdbID}-${Math.floor(
-                Math.random() * appSettings.PAGINATION_ITEMS_PER_PAGE,
-              )}`}
+              key={movie.imdbID}
               imdbID={movie.imdbID}
               title={movie.Title}
               poster={movie.Poster}
