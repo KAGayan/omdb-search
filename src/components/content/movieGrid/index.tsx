@@ -24,10 +24,10 @@ const MovieGrid = ({ movies, totalResults }: Props) => {
   return (
     <>
       <div className="grid">
-        {movies.map((movie) => {
+        {movies.map((movie, index: number) => {
           return (
             <MovieCard
-              key={movie.imdbID}
+              key={`${movie.imdbID}-${index}`}
               imdbID={movie.imdbID}
               title={movie.Title}
               poster={movie.Poster}
