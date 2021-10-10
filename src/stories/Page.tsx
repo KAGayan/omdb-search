@@ -1,28 +1,9 @@
+import { Header } from 'components';
 import React from 'react';
 
-import { Header } from './Header';
-import './page.css';
-
-interface PageProps {
-  user?: {};
-  onLogin: () => void;
-  onLogout: () => void;
-  onCreateAccount: () => void;
-}
-
-export const Page = ({
-  user,
-  onLogin,
-  onLogout,
-  onCreateAccount,
-}: PageProps) => (
+export const Page = () => (
   <article>
-    <Header
-      user={user}
-      onLogin={onLogin}
-      onLogout={onLogout}
-      onCreateAccount={onCreateAccount}
-    />
+    <Header />
 
     <section>
       <h2>Pages in Storybook</h2>
