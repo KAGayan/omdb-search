@@ -31,6 +31,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
+  "homepage": "/omdb-search/",
   "eslintConfig": {
     "extends": [
       "react-app",
