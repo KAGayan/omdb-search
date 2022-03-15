@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import { ReactChild } from 'react';
 import './index.scss';
 
@@ -7,6 +8,6 @@ interface Props {
 }
 export const Card = ({ children, expand }: Props) => {
   return (
-    <div className={`${expand ? 'card-expand' : ''} card`}>{children}</div>
+    <div className={clsx(expand && 'card-expand', 'card')}>{children}</div>
   );
 };
